@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/css/Product.css" />
+  <link rel="stylesheet" href="../style/css/stylehome.css" />
+  <link rel="stylesheet" href="../style/icon/fontawesome-free-6.0.0-web/" />
+  <link rel="stylesheet" href="../style/icon/themify-icons/themify-icons.css" />
+  <link rel="stylesheet" href="../JS/bootstrap.min.css">
+  <script src="../JS/jquery-3.6.0.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <script src="../HTML/slideshow/slide.js"></script>
+  <script src="../JavaScript/js/BTLon.js"></script>
+  <link rel="stylesheet" href="../style/css/bootstrap.min.css">
+
+  <title>Document</title>
+  <script src="../JS/cart.js"></script>
+  <link rel="stylesheet" href="../style/css/sitemap.css">
+  <style>
+    img:hover {
+      transform: scale(1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header" style="position: relative;">
+      <div class="logo">
+        <img src="../style/img/Artboard 1@2x.png" alt="" style="width: 100px; height: 100px" />
+      </div>
+
+      <div class="divh2">
+        <div style="font-size: 15px"><strong> LG </strong> Thin Q</div>
+        <div style="float: right; font-size: 15px">Doanh nghiệp</div>
+        <br />
+        <hr />
+      </div>
+
+      <div class="divh3" style="margin-left: 100px;">
+        <ul class="SupMenu">
+          <li>
+            <a href="../html/DieuHoa&GiaiPhap.html"> Trang chủ <i class="ti-home"></i> </a>
+          </li>
+          <li>
+            <a href="./Product.html">Sản phẩm<i class="ti-arrow-circle-down"></i>
+            </a>
+            <ul class="SubMenu">
+              <li><a href="../html/Product.html">Máy lạnh</a></li>
+              <li><a href="../html/MayLocKhongkhI.html">Máy lọc không khí</a></li>
+              <li><a href="../html/KT-Product.html">Khẩu trang</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../html/gioithieu.html">giới thiệu <i class="ti-info-alt"></i> </a>
+          </li>
+          <li>
+            <a href="#">Liên hệ <i class="ti-headphone-alt"></i> </a>
+          </li>
+          <li>
+            <a href="../html/sitemap.html">SiteMap <i class="ti-map-alt"></i> </a>
+          </li>
+        </ul>
+
+        <div class="icon">
+          <ul class="pr-list">
+            <li id="prcha"> <a href="#"> <i class="ti-user"></i></a>
+              <ul class="menuDN">
+                <li><a href="../html/formregister.html">Đăng ký</a></li>
+                <li><a href="../html/formdk.html">Đăng nhập</a></li>
+              </ul>
+            </li>
+            <li><a href="#"> <i class="ti-shopping-cart"></i></a></li>
+            <li> <a href="#"> <i class="ti-search"></i></a></li>
+            <li>
+              <div class="dropdown"></div>
+              <a href="#"> <i class="ti-search" id="navbarDropdownMenuLink" onclick="myFunction()"></i></a>
+
+              <!-- test -->
+              <div id="myDropdown" class="dropdown-content" style="margin-left: -300px;">
+
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" style="width: 270px;">
+                <button class="btn btn-primary" style="position: absolute; height: 50px; "
+                  href="../html/timkiem.html">Tim
+                  kiem</button>
+                <a href="../html/timkiem.html" style="width: 400px;">Máy lạnh</a>
+                <a href="../html/timkiem.html">khẩu trang</a>
+                <a href="../html/timkiem.html">Lọc không khí</a>
+                <a href="../html/timkiem.html">Thanh Luan</a>
+                <a href="../html/timkiem.html">Inventer</a>
+                <a href="../html/timkiem.html">Phụ kiện không khí</a>
+
+              </div>
+        </div>
+        </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <div class="DH-Top">
+    <div class="siteMap">
+      <p style="margin-top: -100px;">
+        <a href="../html/DieuHoa&GiaiPhap.html">Trang Chủ</a> / Giỏ hàng
+      </p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <p class="col-12 mt-4"
+        style="font-size: 30px; font-weight: bold; font-style: italic; border-bottom:1px solid #ccc;">Danh sách sản phẩm
+      </p>
+    </div>
+    <div class="row">
+      <table class="table">
+        <thead>
+          <tr style="background-color: wheat;">
+            <th>STT</th>
+            <th>Thông tin</th>
+            <th>Mô tả</th>
+            <th>Số lượng</th>
+            <th>Giá(VND)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><img src="../style/img/LKK2-1.jpg" style="height:150px; margin-left: 20px;" alt=""> <br> <span
+                style="margin-left: 10px; font-weight: bold;">Máy lạnh tủ đứng</span></td>
+            <td>
+              <p style="margin-left: -40px;"> <strong>Loại máy</strong>: Máy lạnh 1 chiều (chỉ làm lạnh)</p>
+              <p style="margin-left: -40px;"> <strong> Inverter </strong>:Máy lạnh Inverter</p>
+              <p style="margin-left: -40px;"> <strong>Công suất sưởi ấm </strong> :Không có sưởi ấm</p>
+              <p style="margin-left: -40px;"> <strong> Công nghệ làm lạnh nhanh </strong>:Jet Cool</p>
+              <p><strong style="margin-left: -40px;">Xuất xứ</strong>:Thái Lan</p>
+            </td>
+            <td class="tong"> <input onblur="tinhtien()" type="number" name="" id="sl1" min="0" value="1"
+                style="width: 50px;"></td>
+            <td class="gia" id="gia1"> 12000000 </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><img src="../style/img/CT-1.jpg" style="height:150px" alt=""> <br> <span
+                style="margin-left: 30px; font-weight: bold;">Máy lạnh treo tường</span></td>
+            <td>
+              <p style="margin-left: -40px;"> <strong>Loại máy</strong>: Máy lạnh tủ đứng (chỉ làm lạnh)</p>
+              <p style="margin-left: -40px;"> <strong> Inverter </strong>: Máy lạnh Inverter</p>
+              <p style="margin-left: -40px;"> <strong>Công suất sưởi ấm </strong> : Không có sưởi ấm</p>
+              <p style="margin-left: -40px;"> <strong> Công nghệ làm lạnh nhanh </strong>: Jet Cool</p>
+              <p><strong style="margin-left: -40px;">Xuất xứ</strong>: Việt Nam</p>
+            </td>
+            <td class="tong"> <input onblur="tinhtien()" type="number" name="" id="sl2" min="0" value="1"
+                style="width: 50px;"></td>
+            <td class="gia">
+              <p id="gia2"> 12000000 </p>
+            </td>
+          </tr>
+          <tr style="background-color: wheat;">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td> <strong>Tổng Tiền </strong> </td>
+            <td> <strong style="color:red"><span id="thanhtien">24000000</span> </strong> </td>
+          </tr>
+
+
+        </tbody>
+    </div>
+
+    </table>
+    <button class="btn btn-danger" style="margin-left: 1050px;"> <a href="../html/dathang.html" style="color:black"> Đặt
+        hàng </a></button>
+  </div>
+</body>
+
+</html>

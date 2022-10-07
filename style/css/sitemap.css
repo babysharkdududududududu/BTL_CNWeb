@@ -1,0 +1,68 @@
+.icon>.menuDN{
+    list-style: none;
+}
+.icon>.menuDN>li{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    
+}
+/* .icon:hover .menuDN li{
+    display: block;
+} */
+.ti-user
+{
+    float: right;
+}
+.icon ul.pr-list li
+{
+    display: inline-block;
+    margin-left: 50px ;
+    position: relative;
+}
+
+.icon ul.menuDN li
+{
+    display:none;
+    position:absolute;
+    width: 100px;
+    line-height: 20px;
+    z-index: 2;
+    /* top:200px; */
+    margin-left: -20px;
+    padding-top: 20px;
+}
+.icon ul.pr-list li#prcha:hover ul.menuDN li 
+{
+    display:block;
+}
+.icon ul.pr-list li:hover ul.menuDN li:last-child
+{
+    margin-top: 30px;
+    
+}
+.icon
+{
+    right: 10px;
+    top: 85px;
+    position: absolute;
+    width: 600px;
+    float: right;
+}
+ul.pr-list
+{
+    float: right;
+    margin-right: 30px;
+}
+i{
+    margin-top: 15px;
+    color: black;
+}
+ul.menuDN{
+    margin-top: 15px;
+    
+}
+ul.menuDN li a{
+    text-decoration: none;
+}

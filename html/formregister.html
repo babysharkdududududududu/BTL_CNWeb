@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/css/stylehome.css" />
+  <link rel="stylesheet" href="../style/icon/fontawesome-free-6.0.0-web/" />
+  <link rel="stylesheet" href="../style/icon/fontawesome-free-6.1.1-web/">
+  <link rel="stylesheet" href="../style/icon/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="../style/css/bootstrap.min.css">
+  <script src="../JS/jquery-3.6.0.min.js"></script>
+  <script src="../JS/bootstrap.min.js"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="../style/css/formdk.css">
+  <link rel="stylesheet" href="../style/css/sitemap.css">
+  <script src="../JS/formregister.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="logo">
+        <img src="../style/img/Artboard 1@2x.png" alt="" style="width: 100px; height: 100px" />
+      </div>
+
+      <div class="divh2">
+        <div style="font-size: 15px"><strong> LG </strong> Thin Q</div>
+        <div style="float: right; font-size: 15px">Doanh nghiệp</div>
+        <br />
+        <hr />
+      </div>
+
+      <div class="divh3">
+        <ul class="SupMenu" style="margin-left: 100px;">
+          <li>
+            <a href="../html/DieuHoa&GiaiPhap.html"> Trang chủ <i class="ti-home"></i> </a>
+          </li>
+          <li>
+            <a href="./Product.html">Sản phẩm<i class="ti-arrow-circle-down"></i>
+            </a>
+            <ul class="SubMenu">
+              <li><a href="../html/Product.html">Máy lạnh</a></li>
+              <li><a href="../html/MayLocKhongkhI.html">Máy lọc không khí</a></li>
+              <li><a href="../html/KT-Product.html">Khẩu trang</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../html/gioithieu.html">giới thiệu <i class="ti-info-alt"></i> </a>
+          </li>
+          <li>
+            <a href="../html/lienhe.html">liên hệ <i class="ti-headphone-alt"></i> </a>
+          </li>
+          <li>
+            <a href="../html/sitemap.html">site Map <i class="ti-map"></i> </a>
+          </li>
+
+          <div class="icon">
+            <ul class="pr-list">
+              <li id="prcha"> <a href="#"> <i class="ti-user"></i></a>
+                <ul class="menuDN">
+                  <li><a href="../html/formregister.html">Đăng ký</a></li>
+                  <li><a href="../html/formdk.html">Đăng nhập</a></li>
+                </ul>
+              </li>
+              <li><a href="#"> <i class="ti-shopping-cart"></i></a></li>
+              <li> <a href="#"> <i class="ti-search"></i></a></li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+    <form action="" style="margin-top:150px ; margin-left: 80px;">
+      <div class="row">
+        <div class="col-6 text-center mb-3 mt-5" style="color:#a00032">
+          <h1 style="margin-left:-100px">Đăng ký</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtHoTen" class="col-3 text-right">Họ và Tên</label>
+        <div class="col-9">
+          <input class="form-cotrol" type="text" id="txtHoTen" placeholder="Nhập họ và tên" ;
+            style="width:400px; border-radius: 5px;" onblur="checkHoTen()" required>
+          <span class="text-danger" id="errHoTen">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtTenDangNhap" class="col-3 text-right mt-3">Tên đăng nhập</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="text" id="txtTenDangNhap" placeholder="Nhập tên đăng nhập" ;
+            style="width:400px; border-radius: 5px;" onblur="checkTenDangNhap()" required>
+          <span class="text-danger" id="errTenDangNhap">*</span>
+        </div>
+      </div>
+      <div class="row">
+        <label for="txtMatKhau" class="col-3 text-right mt-3">Mật Khẩu</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="password" id="txtMatKhau" placeholder="Nhập mật khẩu" ;
+            style="width:400px; border-radius: 5px;" onblur="checkMatKhau()" required>
+          <span class="text-danger" id="errMatKhau">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtRMatKhau" class="col-3 text-right mt-3">Xác nhận mật khẩu</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="password" id="txtRMatKhau" placeholder="Nhập lại mật khẩu" ;
+            style="width:400px; border-radius: 5px;" onblur="checkRMatKhau()" required>
+          <span class="text-danger" id="errRMatKhau">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtEmail" class="col-3 text-right mt-3">Email</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="text" id="txtEmail" placeholder="Nhập Email" ;
+            style="width:400px; border-radius: 5px;">
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtSDT" class="col-3 text-right mt-3 ">Số điện thoại</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="text" id="txtSDT" placeholder="Nhập số điện thoại" ;
+            style="width:400px; border-radius: 5px;" onblur="checkSDT()" required>
+          <span class="text-danger" id="errSDT">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="txtDiaChi" class="col-3 text-right mt-3">Địa chỉ</label>
+        <div class="col-9">
+          <input class="form-cotrol mt-3" type="text" id="txtDiaChi" placeholder="Nhập địa chỉ" ;
+            style="width:400px; border-radius: 5px;" onblur="checkDiaChi()" required>
+          <span class="text-danger" id="errDiaChi">*</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class=" btn btn-success mt-3 mb-5 " style="border-radius: 5px; margin-left: -100px; " onclick="dangKy()">
+            Đăng ký</div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

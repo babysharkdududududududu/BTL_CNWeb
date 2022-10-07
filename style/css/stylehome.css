@@ -1,0 +1,180 @@
+/*Reset CSS*/
+*{
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family:Helvetica, sans-serif;
+    font-size: 20px;
+}
+.header{
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    margin: 0px auto;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    top: 0px;  
+    z-index: 99; 
+}
+.header>.div2{
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.header>.div3{
+    width: 100%;
+    height: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.header>.div3>.SupMenu{
+   margin-left: 20px;
+}
+.header>.divh3>ul.SupMenu>li{
+    float: left;
+    line-height: 50px;
+    list-style: none;
+    position: relative;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.header>.divh3>ul>li>a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 0px 15px 0px 15px;
+    text-transform: uppercase;
+    
+}
+.header>.divh3>ul>li>a:hover, 
+.SupMenu .SubMenu>li:hover{
+    background-color: #ccc;
+    color: black;
+    height: 56px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: block;
+    
+    
+    
+}
+.header>.divh3>ul>li:hover ul li:first-child
+{
+    border-top: none;
+}
+
+
+
+
+ul.SubMenu{
+    width: 250px;
+    background-color: white;
+    display: none;
+    position: absolute;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+}
+ul.SubMenu>li{
+    list-style: none;
+    text-indent: 10px;
+    min-width: 250px;
+    border-top: 1px solid #ccc; 
+}
+
+ul.SubMenu>li>a{
+    text-decoration: none;
+    color: black;
+    line-height: 10px;
+}
+ul.SupMenu>li:hover ul.SubMenu{
+    display: block;
+    /* padding-top: 7px; */
+}
+.dieuhoa{
+    padding-top: 15px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: 100px;
+}
+.dieuhoa1{
+    
+    text-align: center;
+    font-size: 40px;
+}
+.dieuhoa2{
+    text-align: center;
+    color: #ccc;
+}
+.main>.header>.divh3>.SupMenu>.icon{
+    float: right;
+    display: inline;
+    line-height: 50px;
+}
+.main>.header>.divh3>.SupMenu>.icon>a{
+    text-decoration: none;
+    padding: 0 15px; 
+    color: black;
+}
+
+.header>.logo{
+    width: 120px;
+    height: 50px;
+    float: left;
+}
+
+.Slider{
+    margin-top: 50px;
+    height: 570px;
+    background-color: #333;
+    
+}
+
+.dieuhoa>.dieuhoa1{
+    margin-top: 20px;
+}
+
+
+
+/*
+
+#header{
+
+}
+
+#supmenu{
+
+}
+
+#submenu{
+
+}
+
+#slider{
+
+}
+
+#container{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}*/
+
+
+/*Cần xác định
+1. Vị trí
+2.Kích thước(width, height)
+3.Màu sắc(....)
+*/
+
+/*Nguyên tắc
+1. Ngoài vào trong
+2. Trên xuống dưới
+3. Tổng quan chi tiết
+*/

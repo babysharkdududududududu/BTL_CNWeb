@@ -1,0 +1,25 @@
+.DN-border{
+    margin-top: 50px;
+    width: 1000px;
+    border: solid 1px #ccc;
+    height: 550px;
+    /*background-image: linear-gradient(to right top, #d16ba5, #d289bf, #d4a5d3, #d9bfe3, #e2d8ee, #ded1e9, #dacbe3, #d7c4dd, #cb9bbf, #c27098, #b54368, #a00032);*/
+    
+}
+.DN-border>.border-l{
+    width: 500px;
+    float: left;
+    border-right: 1px solid #ccc;
+   
+    height: 550px;
+}
+.DN-border>.border-l>h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.DN-border>.border-r{
+    width: 450px;
+    float: right;
+    height: 500px;
+    
+}

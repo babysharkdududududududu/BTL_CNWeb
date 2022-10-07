@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/css/stylehome.css" />
+    <link rel="stylesheet" href="../style/icon/fontawesome-free-6.0.0-web/" />
+    <link rel="stylesheet" href="../style/icon/fontawesome-free-6.1.1-web/">
+    <link rel="stylesheet" href="../style/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../style/css/bootstrap.min.css">
+    <script src="../JS/jquery-3.6.0.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/css/sitemap.css">
+    <script src="../JS/quanlithongtin.js"></script>
+
+    <script src="../JS/formdk.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <img src="../style/img/Artboard 1@2x.png" alt="" style="width: 100px; height: 100px" />
+            </div>
+
+            <div class="divh2">
+                <div style="font-size: 15px"><strong> LG </strong> Thin Q</div>
+                <div style="float: right; font-size: 15px">Doanh nghiệp</div>
+                <br />
+                <hr />
+            </div>
+
+            <div class="divh3">
+                <ul class="SupMenu" style="margin-left: 100px;">
+                    <li>
+                        <a href="../html/DieuHoa&GiaiPhap.html"> Trang chủ <i class="ti-home"></i> </a>
+                    </li>
+                    <li>
+                        <a href="./Product.html">Sản phẩm<i class="ti-arrow-circle-down"></i>
+                        </a>
+                        <ul class="SubMenu">
+                            <li><a href="../html/Product.html">Máy lạnh</a></li>
+                            <li><a href="../html/MayLocKhongkhI.html">Máy lọc không khí</a></li>
+                            <li><a href="../html/KT-Product.html">Khẩu trang</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieu.html">giới thiệu <i class="ti-info-alt"></i> </a>
+                    </li>
+                    <li>
+                        <a href="../html/lienhe.html">liên hệ <i class="ti-headphone-alt"></i> </a>
+                    </li>
+                    <li>
+                        <a href="../html/sitemap.html">Site Map <i class="ti-map"></i> </a>
+                    </li>
+
+                    <div class="icon">
+                        <ul class="pr-list">
+                            <li id="prcha"> <a href="#"> <i class="ti-user"></i></a>
+                                <ul class="menuDN">
+                                    <li><a href="../html/formregister.html">Đăng ký</a></li>
+                                    <li><a href="../html/formdk.html">Đăng nhập</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../html/cart.html"> <i class="ti-shopping-cart"></i></a></li>
+                            <li>
+                                <div class="dropdown"></div>
+                                <a href="#"> <i class="ti-search" id="navbarDropdownMenuLink"
+                                        onclick="myFunction()"></i></a>
+
+                                <!-- test -->
+                                <div id="myDropdown" class="dropdown-content" style="margin-left: -190px;">
+                                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                                    <a href="#about">Máy lạnh</a>
+                                    <a href="#base">khẩu trang</a>
+                                    <a href="#blog">Lọc không khí</a>
+                                    <a href="#contact">Thanh Luan</a>
+                                    <a href="#custom">Inventer</a>
+                                    <a href="#support">Phụ kiện không khí</a>
+                                </div>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <form action="" style="margin-top:150px">
+                <div class="row">
+                    <div class="col-6 text-center mb-3 mt-5" style="color:#a00032">
+                        <h1 style="margin-left:-150px">Thông tin cá nhân</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="txtHoTen" class="col-3 text-right">Họ và Tên</label>
+                    <div class="col-9">
+                        <input class="form-cotrol" type="text" id="txtHoTen" value="Nguyen Thanh Luan"
+                            style="width:400px; border-radius: 5px;">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="txtTenDangNhap" class="col-3 text-right mt-3">Tên đăng nhập</label>
+                    <div class="col-9">
+                        <input class="form-cotrol mt-3" type="text" id="txtTenDangNhap" value="ThanhLuan"
+                            style="width:400px; border-radius: 5px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="txtMatKhau" class="col-3 text-right mt-3">Mật Khẩu</label>
+                    <div class="col-9">
+                        <input class="form-cotrol mt-3" type="text" id="txtMatKhau" value="matkhau1234"
+                            style="width:400px; border-radius: 5px;" onblur="checkMatKhau()">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="txtEmail" class="col-3 text-right mt-3">Email</label>
+                    <div class="col-9">
+                        <input class="form-cotrol mt-3" type="text" id="txtEmail" value="Luan@gmail.com"
+                            style="width:400px; border-radius: 5px;">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="txtSDT" class="col-3 text-right mt-3">Số điện thoại</label>
+                    <div class="col-9">
+                        <input class="form-cotrol mt-3" type="text" id="txtSDT" value="0123456789"
+                            style="width:400px; border-radius: 5px;" onblur="checkSDT()">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="txtDiaChi" class="col-3 text-right mt-3">Địa chỉ</label>
+                    <div class="col-9">
+                        <input class="form-cotrol mt-3" type="text" id="txtDiaChi"
+                            value="12 Nguyen Van Bao Phuong 4 Go Vap" style="width:400px; border-radius: 5px;"
+                            onblur="checkDiaChi()">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!--Modal-->
+    <button id="myBtn" type="button" class="btn btn-info btn-lg mt-5" style="margin-left: 300px">
+        Cập nhật thông tin
+    </button>
+
+
+
+    <!--The modal-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Thông tin</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="txtten">Họ Tên</label>
+                        <input id="txtten" class="form-control" type="text" placeholder="Nguyen Thanh Luan">
+                        <span class="text-danger" id="errten">*</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtsdt">Số điện thoại</label>
+                        <input id="txtsdt" class="form-control" type="text" placeholder="0123456789">
+                        <span class="text-danger" id="errsdt">*</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtdiachi">Địa chỉ</label>
+                        <input id="txtdiachi" class="form-control" type="text"
+                            placeholder="12 Nguyen van Bao Phuong 4 Go Vap">
+                        <span class="text-danger" id="errdiachi">*</span>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" id="btnCapNhat" onblur="thanhCong()">Cập nhật</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <button class="btn btn-success btn-lg" style="margin-left: 600px; margin-top: -70px;"> <a
+            href="../html/DieuHoa&GiaiPhap.html" style="color: azure;"> Quay lại trang chủ </a></button>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
